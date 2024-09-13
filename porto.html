@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Cyber N Tech</title>
+  <link rel="stylesheet" href="porto.css">
+  <link rel="icon" href="Assets/icon.jpg">
+  <!-- Include Three.js and other necessary libraries -->
+  <script src="https://cdn.jsdelivr.net/npm/three@0.146.0/build/three.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/three@0.146.0/examples/js/controls/OrbitControls.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/three@0.146.0/examples/js/loaders/GLTFLoader.js"></script>
+</head>
+<body>
+  <div class="welcome">
+    <h1>Welcome</h1>
+    <div class="wave-emote">👋</div>
+  </div>
+
+  <div class="container">
+    <header>
+      <img src="Assets/icon.jpg" alt="Icon" class="icon">
+      <h1>Cyber N Tech</h1>
+      <nav>
+        <ul>
+          <li><a href="#aboutme">About Me</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#contactme">Contact Me</a></li>
+        </ul>
+      </nav>
+      <div class="social-media">
+        <a href="https://www.instagram.com/auferwaker" target="_blank" class="social-icon">
+          <img src="Assets/instagram.png" alt="Instagram">
+        </a>
+        <a href="https://x.com/AuferWaker" target="_blank" class="social-icon">
+          <img src="Assets/X.png" alt="X">
+        </a>
+        <a href="https://github.com/ICR-1" target="_blank" class="social-icon">
+          <img src="Assets/github.png" alt="GitHub">
+        </a>
+      </div>
+    </header>
+
+    <section id="aboutme" class="section-border">
+      <h2>About Me</h2>
+      <p>Hello, my name is Aufer aka fer. I am 17 years old and part of the ITEC organization. I am seeking experience in both hardware and software while continuously learning and creating.</p>
+    </section>
+
+    <section id="projects" class="section-border">
+      <h2>Projects</h2>
+      <div class="project-gallery">
+        <img src="Assets/Projek1.png" alt="Project 1">
+        <img src="Assets/Projek2.png" alt="Project 2">
+        <img src="Assets/Projek3.png" alt="Project 3">
+        <img src="Assets/Projek4.png" alt="Project 4">
+        <img src="Assets/Projek5.png" alt="Project 5">
+        <img src="Assets/Projek6.png" alt="Project 6">
+      </div>
+    </section>
+
+     <!-- Three.js container -->
+  <div id="container"></div>
+
+    <section id="contactme" class="section-border">
+      <h2>Contact Me</h2>
+      <p>If you'd like to get in touch, feel free to reach out via email:</p>
+      <a href="mailto:auferwaker@gmail.com">auferwaker@gmail.com</a>
+    </section>
+  </div>
+
+  <footer>
+    <p>&copy; 2024 Aufer. All rights reserved. | Location: Bekasi, Indonesia</p>
+  </footer>
+
+  <!-- CAPTCHA Modal -->
+  <div id="captcha-modal" class="modal">
+    <div class="modal-content">
+      <h2>Complete Captcha to Continue</h2>
+      <p>Arma 3 jelek</p>
+      <p id="agree-paragraph">Do you agree?</p>
+      <button id="verify-yes">Yes</button>
+      <button id="verify-no">No</button>
+    </div>
+  </div>
+
+  <script src="porto.js"></script>
+</body>
+</html>
